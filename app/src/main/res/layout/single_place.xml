@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/light_gradient2"
+        android:orientation="vertical"
+
+        android:padding="10dip">
+
+        <!-- Name Label -->
+        <TextView
+            android:text="Name:"
+            android:textSize="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="5dip"
+            android:textStyle="bold"/>
+
+        <!--  Name Value -->
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"/>
+
+        <!-- Address Label -->
+        <TextView
+            android:text="Address:"
+            android:textSize="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:layout_marginBottom="5dip"
+            android:textStyle="bold"/>
+
+        <!--  Address Value -->
+        <TextView
+            android:id="@+id/address"
+            android:textSize="14dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Phone Number Label -->
+        <TextView
+            android:id="@+id/phone"
+            android:textSize="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"/>
+
+
+        <!-- Location Value -->
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:textSize="14dp"
+            android:layout_marginBottom="5dip"/>
+
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:background="@drawable/light_grad3"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/btnViewMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Map"
+            android:background="@drawable/light_grad3"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnAddToFab"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:onClick="addToFab"
+                android:layout_height="wrap_content"
+                android:text="Add To Fab"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/light_grad3"
+                android:textSize="18dp"
+                android:textColor="@color/white"/>
+            <ImageButton
+                android:id="@+id/btnAddToFab1"
+                android:layout_width="50dp"
+                android:background="@drawable/star"
+                android:onClick="addToFab"
+                android:layout_height="50dp"
+                android:layout_weight="0.01"
+                android:layout_marginBottom="5dp"
+                />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/txtComment"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:ems="10"
+            android:hint="Your View"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="saveReview"
+            android:text="Save Review"
+            android:textColor="@color/white"
+            android:background="@drawable/light_grad3"/>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+    </LinearLayout>
+</ScrollView>

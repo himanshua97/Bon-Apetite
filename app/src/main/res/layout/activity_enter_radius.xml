@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  
+ 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    android:orientation="vertical"
+
+   >
+
+
+    <EditText
+        android:id="@+id/etPoliceRadius"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="79dp"
+        android:ems="10"
+        android:layout_marginLeft="75dp"
+        android:textColor="@color/white"
+        android:hint="Radius In Mtr" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnViewMap"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignBaseline="@+id/etPoliceRadius"
+        android:layout_alignBottom="@+id/etPoliceRadius"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/etPoliceRadius"
+        android:background="@drawable/circle_shape"
+        android:textColor="@color/white"
+        android:text="Enter Radius" />
+
+
+    <AnalogClock
+        android:id="@+id/analogClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnViewMap"
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="100dp"
+        android:layout_toLeftOf="@+id/btnViewMap" />
+
+   
+
+</LinearLayout>

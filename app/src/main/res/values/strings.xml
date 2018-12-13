@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Bon Appétit</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_list_fab_places">ListFabPlaces</string>
+    <string name="oneNote">NoteView</string>
+    <string name="addNoteButton">New note</string>
+    <string name="mainHeader">My notes</string>
+    <string name="CtxMenuHeader">Choose action</string>
+    <string name="updateNoteButton">Update note</string>
+    <string name="validation">Please fill the title and/or content field</string>
+
+    <!-- createview layout -->
+    <string name="noteTitle">Note\'s title</string>
+    <string name="noteContent">Note\'s content</string>
+    <string name="saveNoteButton">Save note</string>
+
+
+    <!-- context menu options -->
+    <string name="showNote">Show note</string>
+    <string name="editNote">Edit note</string>
+    <string name="removeNote">Remove note</string>
+
+    <string name="titleHint">Enter title here</string>
+</resources>

@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    android:paddingTop="50dp"
+     >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:clickable="true"
+        android:measureWithLargestChild="false"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:splitMotionEvents="true" >
+
+        <!-- android:background="@android:color/white" api level 14 is required -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_weight="0.5">
+        <Button
+            android:id="@+id/btnViewMap"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:onClick="enterResturant"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:text="NearBy Resturants"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:background="@drawable/button_shape"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_weight="0.5">
+        <Button
+        android:id="@+id/btnMyLocation"
+        android:layout_width="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="20dp"
+        android:layout_height="100dp"
+        android:text="My Location"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+        android:background="@drawable/button_shape" />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_weight="0.5">
+        <Button
+        android:id="@+id/button1"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+        android:layout_width="200dp"
+        android:onClick="refresh"
+        android:layout_height="100dp"
+        android:text="Refresh"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/button_shape"/>
+</LinearLayout>
+
+
+
+
+
+      <!--<TextView-->
+          <!--android:id="@+id/tvLocation"-->
+          <!--android:layout_width="match_parent"-->
+          <!--android:layout_height="wrap_content"-->
+          <!--android:textColor="@android:color/white"-->
+          <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+       <!--/>-->
+
+</LinearLayout>
+
+</LinearLayout>
